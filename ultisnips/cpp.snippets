@@ -1,0 +1,93 @@
+# main()
+snippet contest "contest template"
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    freopen("${1:input.txt}", "r", stdin);
+    freopen("${2:output.txt}", "w", stdout);
+    ${3}
+    return 0;
+}
+endsnippet
+
+snippet main "main"
+int main(int argc, char *argv[])
+{
+    ${3}
+    return 0;
+}
+endsnippet
+
+snippet {
+{
+    $0
+}
+endsnippet
+
+# if
+snippet if
+if (${1})
+{
+    ${2}
+}
+endsnippet
+
+snippet elif
+else if (${1})
+{
+    ${2}
+}
+endsnippet
+snippet el
+else
+{
+    ${1}
+}
+endsnippet
+
+# loops
+snippet for
+for (${1:int} ${2:i} = ${3:0}; i < ${4:n}; ++$2)
+{
+    ${5}
+}
+endsnippet
+
+snippet wh
+while (${1})
+{
+    ${2}
+}
+endsnippet
+
+snippet do
+do
+{
+    ${2}
+} while (${1:1});
+endsnippet
+
+# Containers
+snippet v
+vector<${1:int}> ${2:a};
+endsnippet
+
+snippet ll
+long long int ${1:a};
+endsnippet
+
+snippet un
+unsigned
+endsnippet
+
+# cout
+snippet c
+cout << $0;
+endsnippet
+snippet  <
+<< " " << $0
+endsnippet
+
