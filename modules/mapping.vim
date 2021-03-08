@@ -60,6 +60,10 @@ map <silent> <M-h> :call WinMove('h')<CR>
 map <silent> <M-j> :call WinMove('j')<CR>
 map <silent> <M-k> :call WinMove('k')<CR>
 map <silent> <M-l> :call WinMove('l')<CR>
+map <silent> <M-L> :vertical resize +5<CR>
+map <silent> <M-H> :vertical resize -5<CR>
+map <silent> <M-K> :res +5<cr>
+map <silent> <M-J> :res -5<cr>
 
 " exit from term mode
 tnoremap <Esc> <C-\><C-n>

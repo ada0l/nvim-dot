@@ -10,7 +10,7 @@ endfunction
 
 function! SimpleStatusLine()
     return
-	\ "%#RESET#"
+        \ "%#StatusLineNC#"
         \ . "%="
         \ . "%.20t\ "
         \ . "%{SetModifiedSymbol(&modified)}"
@@ -18,4 +18,4 @@ function! SimpleStatusLine()
         \ . " "
 endfunction
 
-set statusline=%!SimpleStatusLine()
+"set statusline=%!SimpleStatusLine()

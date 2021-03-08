@@ -10,13 +10,13 @@ function! MyTabLine()
     for i in range(tabpagenr('$'))
     " select the highlighting
         if i + 1 == tabpagenr()
-            let s .= '%#DiffAdd#'
+            let s .= '%#Error#'
         else
-            let s .= '%#DiffChange#'
+            let s .= '%#Comment#'
         endif
         let s .= ' '. (i+1) . ' '
         " the label is made by MyTabLabel()
-        let s .= '%#Cursor  #%{MyTabLabel(' . (i + 1) . ')} '
+        let s .= '%#Normal# %{MyTabLabel(' . (i + 1) . ')} '
         if i+1 < tabpagenr('$')
             let s .= ' '
         endif

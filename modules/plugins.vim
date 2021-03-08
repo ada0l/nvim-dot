@@ -48,14 +48,9 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 Plug 'plasticboy/vim-markdown'
-Plug 'flazz/vim-colorschemes'
-Plug 'yassinebridi/vim-purpura'
-Plug 'wadackel/vim-dogrun'
-Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'junegunn/goyo.vim'
-Plug 'nightsense/strawberry'
-Plug 'co1ncidence/bliss'
+Plug 'ada0l/sunpurple'
+
 call plug#end()
 
-"colorscheme hybrid
-colorscheme bliss
+colorscheme sunpurple

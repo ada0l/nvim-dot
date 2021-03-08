@@ -25,10 +25,10 @@ set smartindent
 set lazyredraw
 autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
-nnoremap <C-n> :Vexplore!<CR>
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
-let g:netrw_browse_split = 3
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+    if !exists("*synstack")
+        return
+    endif
+    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
